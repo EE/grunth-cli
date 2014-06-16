@@ -1,0 +1,38 @@
+{
+  "name": "grunth",
+  "version": "0.1.0-pre",
+  "description": "Runs grunt with the --harmony flag",
+  "homepage": "https://github.com/EE/grunth",
+  "author": {
+    "name": "Michał Gołębiowski",
+    "email": "m.goleb@gmail.com"
+  },
+  "keywords": [
+    "grunt",
+    "harmony",
+    "es6"
+  ],
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EE/grunth.git"
+  },
+  "bugs": "https://github.com/EE/grunth/issues",
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-cli": "0.1.13",
+    "grunt-contrib-jshint": "0.10.0",
+    "semver": "2.3.0"
+  },
+  "peerDependencies": {
+    "grunt-cli": "~0.1.13"
+  },
+  "scripts": {
+    "test": "grunth test"
+  }
+}

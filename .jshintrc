@@ -1,0 +1,25 @@
+{
+    "bitwise": true,
+    "curly": true,
+    "eqeqeq": true,
+    "eqnull": true,
+    "forin": false,
+    "immed": true,
+    "newcap": true,
+    "noarg": true,
+    "noempty": true,
+    "nonew": true,
+    "strict": true,
+    "undef": true,
+
+    "devel": true,
+    "esnext": true,
+    "node": true,
+
+    "quotmark": "single",
+    "maxcomplexity": 10,
+    "maxerr": 50,
+    "maxlen": 120,
+
+    "globals": {}
+}

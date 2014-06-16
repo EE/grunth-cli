@@ -1,6 +1,6 @@
 {
   "name": "grunth",
-  "version": "0.1.1",
+  "version": "0.1.2-pre",
   "description": "Runs grunt with the --harmony flag",
   "homepage": "https://github.com/EE/grunth",
   "author": {

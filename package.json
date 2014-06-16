@@ -1,6 +1,6 @@
 {
   "name": "grunth",
-  "version": "0.1.2-pre",
+  "version": "0.2.0-pre",
   "description": "Runs grunt with the --harmony flag",
   "homepage": "https://github.com/EE/grunth",
   "author": {
@@ -26,14 +26,13 @@
       "type": "MIT"
     }
   ],
+  "dependencies": {
+    "grunt-cli": "~0.1.13"
+  },
   "devDependencies": {
     "grunt": "0.4.5",
-    "grunt-cli": "0.1.13",
     "grunt-contrib-jshint": "0.10.0",
     "semver": "2.3.0"
-  },
-  "peerDependencies": {
-    "grunt-cli": "~0.1.13"
   },
   "scripts": {
     "test": "grunth test"

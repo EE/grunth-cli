@@ -1,3 +1,15 @@
 #!/bin/sh
 
-/usr/bin/env node --harmony "`which grunt`" $*
+# Thanks to Olov Lassus for inspiration: https://github.com/olov/node-harmony-wrapper
+
+rdlkf() {
+    [ -L "$1" ] && (local lk="$(readlink "$1")"
+    local d="$(dirname "$1")"
+    cd "$d"
+    local l="$(rdlkf "$lk")"
+    ([[ "$l" = /* ]] && echo "$l" || echo "$d/$l")) || echo "$1"
+}
+
+DIR="$(dirname "$(rdlkf "$0")")"
+
+/usr/bin/env node --harmony "$DIR/../node_modules/.bin/grunt" $*

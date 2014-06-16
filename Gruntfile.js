@@ -1,6 +1,6 @@
 /**
- * grunth
- * https://github.com/EE/grunth
+ * grunth-cli
+ * https://github.com/EE/grunth-cli
  *
  * Author Michał Gołębiowski <m.goleb@gmail.com>
  * Copyright Laboratorium EE (http://laboratorium.ee/en)

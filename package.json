@@ -1,8 +1,8 @@
 {
-  "name": "grunth",
+  "name": "grunth-cli",
   "version": "0.2.0-pre",
   "description": "Runs grunt with the --harmony flag",
-  "homepage": "https://github.com/EE/grunth",
+  "homepage": "https://github.com/EE/grunth-cli",
   "author": {
     "name": "Michał Gołębiowski",
     "email": "m.goleb@gmail.com"
@@ -18,9 +18,9 @@
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/EE/grunth.git"
+    "url": "https://github.com/EE/grunth-cli.git"
   },
-  "bugs": "https://github.com/EE/grunth/issues",
+  "bugs": "https://github.com/EE/grunth-cli/issues",
   "licenses": [
     {
       "type": "MIT"

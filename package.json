@@ -7,6 +7,9 @@
     "name": "Michał Gołębiowski",
     "email": "m.goleb@gmail.com"
   },
+  "bin": {
+    "grunth": "bin/grunth"
+  },
   "keywords": [
     "grunt",
     "harmony",

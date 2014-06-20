@@ -13,38 +13,55 @@ const assert = require('assert');
 const semver = require('semver');
 
 module.exports = function (grunt) {
-    const jshintModuleName = 'grunt-contrib-jshint';
     let defaultName = 'default';
 
     grunt.initConfig({
-        jshint: {
-            options: {
-                jshintrc: true,
-            },
+        eslint: {
             all: {
-                src: ['**/*.js'],
+                src: [
+                    'Gruntfile.js',
+                ],
+            },
+        },
+
+        jscs: {
+            all: {
+                src: [
+                    'Gruntfile.js',
+                ],
+                options: {
+                    config: '.jscsrc',
+                },
             },
         },
     });
 
-    grunt.loadNpmTasks(jshintModuleName);
+    // Load all grunt tasks matching the `grunt-*` pattern.
+    require('load-grunt-tasks')(grunt);
 
     grunt.registerTask('asserts', function () {
         assert.deepEqual(process.execArgv, ['--harmony'], 'The harmony flag wasn\'t passed to the process');
         const nodeVersion = semver.valid(process.version);
         if (semver.satisfies(nodeVersion, '>= 0.11')) {
             try {
-                /* jshint evil: true */
-                const generatorResult = eval('function* f() {yield 2;} const g = f(); g.next();');
-                /* jshint evil: false */
+                /* eslint-disable no-eval */
+                eval('function* f() {yield 2;} const g = f(); g.next();');
+                /* eslint-ensable no-eval */
             } catch (e) {
                 throw new Error('Generators not recognized!');
             }
         }
     });
 
+    grunt.registerTask('lint', [
+        'eslint',
+        'jscs',
+    ]);
+
     grunt.registerTask('test', [
-        'jshint',
+        'lint',
         'asserts',
     ]);
+
+    grunt.registerTask(defaultName, ['test']);
 };

@@ -13,6 +13,8 @@ const assert = require('assert');
 const semver = require('semver');
 
 module.exports = function (grunt) {
+    require('time-grunt')(grunt);
+
     let defaultName = 'default';
 
     grunt.initConfig({

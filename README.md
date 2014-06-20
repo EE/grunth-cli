@@ -1,6 +1,9 @@
-# grunth-cli [![Build Status](https://travis-ci.org/EE/grunth-cli.svg?branch=master)](https://travis-ci.org/EE/grunth-cli)
+# grunth-cli
 
 > Runs grunt with the --harmony flag.
+
+[![Build Status](https://travis-ci.org/EE/grunth-cli.svg?branch=master)](https://travis-ci.org/EE/grunth-cli)
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 ## Description
 This package exposes the `grunth` shell command that works like `grunt` but fires it using

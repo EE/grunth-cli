@@ -42,7 +42,8 @@ module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt);
 
     grunt.registerTask('asserts', function () {
-        assert.deepEqual(process.execArgv, ['--harmony'], 'The harmony flag wasn\'t passed to the process');
+        assert(process.execArgv.indexOf('--harmony_scoping') !== -1,
+            'The harmony_scoping flag wasn\'t passed to the process');
         const nodeVersion = semver.valid(process.version);
         if (semver.satisfies(nodeVersion, '>= 0.11')) {
             try {

@@ -1,15 +1,31 @@
-#!/bin/bash
+#!/usr/bin/env node
 
-# Thanks to Olov Lassus for inspiration: https://github.com/olov/node-harmony-wrapper
+'use strict';
 
-rdlkf() {
-    [ -L "$1" ] && (local lk="$(readlink "$1")"
-    local d="$(dirname "$1")"
-    cd "$d"
-    local l="$(rdlkf "$lk")"
-    ([[ "$l" = /* ]] && echo "$l" || echo "$d/$l")) || echo "$1"
-}
+var findup = require('findup-sync');
+var spawnSync = require('child_process').spawnSync;
+var gruntPath = findup('node_modules/{.,}bin/grunt', {cwd: __dirname});
 
-DIR="$(dirname "$(rdlkf "$0")")"
+process.title = 'grunth';
 
-/usr/bin/env node --harmony "$DIR/../node_modules/.bin/grunt" $*
+var harmonyFlags = [
+    '--harmony_scoping',
+//    '--harmony_modules', // We have require and ES6 modules are still in flux
+    '--harmony_symbols',
+    '--harmony_proxies',
+//    '--harmony_collections', // new Set([2, 3]) doesn't work
+    '--harmony_generators',
+//    '--harmony_iteration', // no for-of, the description must be wrong
+    '--harmony_numeric_literals',
+    '--harmony_strings',
+    '--harmony_arrays',
+    '--harmony_maths',
+];
+
+spawnSync('node',
+    harmonyFlags.concat([gruntPath]).concat(process.argv.slice(2)),
+    {
+        cwd: process.cwd(),
+        stdio: 'inherit',
+    }
+);

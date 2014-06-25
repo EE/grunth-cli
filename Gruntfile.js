@@ -22,6 +22,7 @@ module.exports = function (grunt) {
                 src: [
                     '*.js',
                     'bin/grunth',
+                    'lib/*.js',
                 ],
             },
         },

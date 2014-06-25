@@ -15,7 +15,7 @@
     "harmony",
     "es6"
   ],
-  "main": "Gruntfile.js",
+  "main": "lib/cli.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/EE/grunth-cli.git"

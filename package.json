@@ -36,7 +36,6 @@
     "grunt-jscs-checker": "0.6.0",
     "jscs-trailing-comma": "0.3.0",
     "load-grunt-tasks": "0.6.0",
-    "semver": "2.3.1",
     "time-grunt": "0.3.2"
   },
   "scripts": {

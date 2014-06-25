@@ -18,6 +18,11 @@ To install the module globally:
 npm -g install grunth-cli
 ```
 
+Note: current version requires Node >=0.11.13. If you need Node 0.10 support, use:
+```shell
+npm -g install grunth-cli@0.2.1
+```
+
 Once the module has been installed, in every project that uses Grunt you can replace `grunt` with `grunth` in your commands, like:
 
 ```sh

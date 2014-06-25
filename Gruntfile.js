@@ -10,7 +10,6 @@
 'use strict';
 
 const assert = require('assert');
-const semver = require('semver');
 
 module.exports = function (grunt) {
     require('time-grunt')(grunt);
@@ -44,15 +43,12 @@ module.exports = function (grunt) {
     grunt.registerTask('asserts', function () {
         assert(process.execArgv.indexOf('--harmony_scoping') !== -1,
             'The harmony_scoping flag wasn\'t passed to the process');
-        const nodeVersion = semver.valid(process.version);
-        if (semver.satisfies(nodeVersion, '>= 0.11')) {
-            try {
-                /* eslint-disable no-eval */
-                eval('function* f() {yield 2;} const g = f(); g.next();');
-                /* eslint-ensable no-eval */
-            } catch (e) {
-                throw new Error('Generators not recognized!');
-            }
+        try {
+            /* eslint-disable no-eval */
+            eval('function* f() {yield 2;} const g = f(); g.next();');
+            /* eslint-ensable no-eval */
+        } catch (e) {
+            throw new Error('Generators not recognized!');
         }
     });
 

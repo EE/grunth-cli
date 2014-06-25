@@ -1,6 +1,6 @@
 # grunth-cli
 
-> Runs grunt with the --harmony flag.
+> Runs grunt with the --harmony_* flags
 
 [![Build Status](https://travis-ci.org/EE/grunth-cli.svg?branch=master)](https://travis-ci.org/EE/grunth-cli)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)

@@ -20,16 +20,15 @@ module.exports = function (grunt) {
         eslint: {
             all: {
                 src: [
-                    'Gruntfile.js',
+                    '*.js',
+                    'bin/grunth',
                 ],
             },
         },
 
         jscs: {
             all: {
-                src: [
-                    'Gruntfile.js',
-                ],
+                src: '<%= eslint.all.src %>',
                 options: {
                     config: '.jscsrc',
                 },

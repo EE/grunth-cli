@@ -10,12 +10,12 @@ process.title = 'grunth';
 
 var harmonyFlags = [
     '--harmony_scoping',
-//    '--harmony_modules', // We have require and ES6 modules are still in flux
+//    '--harmony_modules', // We have `require` and ES6 modules are still in flux
     '--harmony_symbols',
     '--harmony_proxies',
-//    '--harmony_collections', // new Set([2, 3]) doesn't work
+//    '--harmony_collections', // `new Set([2, 3])` doesn't work
     '--harmony_generators',
-//    '--harmony_iteration', // no for-of, the description must be wrong
+//    '--harmony_iteration', // no `for-of`, the description must be wrong
     '--harmony_numeric_literals',
     '--harmony_strings',
     '--harmony_arrays',

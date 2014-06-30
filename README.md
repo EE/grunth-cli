@@ -1,10 +1,10 @@
 # grunth-cli [![Build Status](https://travis-ci.org/EE/grunth-cli.svg?branch=master)](https://travis-ci.org/EE/grunth-cli)
 
-> Runs grunt with the --harmony flag.
+> Runs grunt with the --harmony_scoping flag.
 
 ## Description
 This package exposes the `grunth` shell command that works like `grunt` but fires it using
-the node `--harmony` flag. Thanks to that, you can use ECMAScript 6 features that have experimental
+the node `--harmony_scoping` flag. Thanks to that, you can use ECMAScript 6 features that have experimental
 implementation in Node, like `const`/`let` block scoping, generators etc.
 
 The module is a replacement for the `grunt-cli` package.

@@ -10,7 +10,6 @@
 'use strict';
 
 const assert = require('assert');
-const semver = require('semver');
 
 module.exports = function (grunt) {
     const jshintModuleName = 'grunt-contrib-jshint';
@@ -30,17 +29,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks(jshintModuleName);
 
     grunt.registerTask('asserts', function () {
-        assert.deepEqual(process.execArgv, ['--harmony'], 'The harmony flag wasn\'t passed to the process');
-        const nodeVersion = semver.valid(process.version);
-        if (semver.satisfies(nodeVersion, '>= 0.11')) {
-            try {
-                /* jshint evil: true */
-                const generatorResult = eval('function* f() {yield 2;} const g = f(); g.next();');
-                /* jshint evil: false */
-            } catch (e) {
-                throw new Error('Generators not recognized!');
-            }
-        }
+        assert.deepEqual(process.execArgv, ['--harmony_scoping'], 'The harmony flag wasn\'t passed to the process');
     });
 
     grunt.registerTask('test', [

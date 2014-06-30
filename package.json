@@ -1,7 +1,7 @@
 {
   "name": "grunth-cli",
-  "version": "0.2.2",
-  "description": "Runs grunt with the --harmony flag",
+  "version": "0.2.3",
+  "description": "Runs grunt with the --harmony_scoping flag",
   "homepage": "https://github.com/EE/grunth-cli",
   "author": {
     "name": "Michał Gołębiowski",
@@ -31,8 +31,7 @@
   },
   "devDependencies": {
     "grunt": "0.4.5",
-    "grunt-contrib-jshint": "0.10.0",
-    "semver": "2.3.0"
+    "grunt-contrib-jshint": "0.10.0"
   },
   "scripts": {
     "test": "grunth test"

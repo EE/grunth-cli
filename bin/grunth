@@ -12,4 +12,4 @@ rdlkf() {
 
 DIR="$(dirname "$(rdlkf "$0")")"
 
-/usr/bin/env node --harmony "$DIR/../node_modules/.bin/grunt" $*
+/usr/bin/env node --harmony_scoping "$DIR/../node_modules/.bin/grunt" $*

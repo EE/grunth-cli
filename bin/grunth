@@ -10,6 +10,33 @@ rdlkf() {
     ([[ "$l" = /* ]] && echo "$l" || echo "$d/$l")) || echo "$1"
 }
 
-DIR="$(dirname "$(rdlkf "$0")")"
+notFound() {
+    echo "Grunt binary not found. Please reinstall the grunth-cli package."
+    exit 1
+}
 
-/usr/bin/env node --harmony_scoping "$DIR/../node_modules/.bin/grunt" $*
+resolveDir() {
+    cd "$1"
+    echo "$(pwd -P)"
+}
+
+DIR="$(resolveDir "$(dirname "$(rdlkf "$0")")/../node_modules/")"
+echo "0 $DIR"
+
+while [ ! -f "$DIR/.bin/grunt" ] && [ ! -f "$DIR/bin/grunt" ]; do
+    DIR="$(resolveDir "$DIR/..")"
+    if [ "$DIR" == "/" ]; then
+        notFound
+    fi
+    echo "1 $DIR"
+done
+
+if [ -f "$DIR/.bin/grunt" ]; then
+    GRUNT_PATH="$DIR/.bin/grunt"
+elif [ -f "$DIR/.bin/grunt" ]; then
+    GRUNT_PATH="$DIR/bin/grunt"
+else
+    notFound
+fi
+
+/usr/bin/env node --harmony_scoping "$GRUNT_PATH" $*

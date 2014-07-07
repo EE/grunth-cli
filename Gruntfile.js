@@ -12,8 +12,7 @@
 const assert = require('assert');
 
 module.exports = function (grunt) {
-    const jshintModuleName = 'grunt-contrib-jshint';
-    let defaultName = 'default';
+    let jshintModuleName = 'grunt-contrib-jshint';
 
     grunt.initConfig({
         jshint: {

@@ -1,6 +1,6 @@
 {
   "name": "grunth-cli",
-  "version": "0.2.4-pre",
+  "version": "0.2.4",
   "description": "Runs grunt with the --harmony_scoping flag",
   "homepage": "https://github.com/EE/grunth-cli",
   "author": {

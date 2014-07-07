@@ -20,15 +20,17 @@ resolveDir() {
     echo "$(pwd -P)"
 }
 
-DIR="$(resolveDir "$(dirname "$(rdlkf "$0")")/../node_modules/")"
-echo "0 $DIR"
+DIR="$(dirname "$(rdlkf "$0")")/.."
+if [ -d "$DIR/node_modules/" ]; then
+    DIR="$DIR/node_modules/"
+fi
+DIR="$(resolveDir "$DIR")"
 
 while [ ! -f "$DIR/.bin/grunt" ] && [ ! -f "$DIR/bin/grunt" ]; do
     DIR="$(resolveDir "$DIR/..")"
     if [ "$DIR" == "/" ]; then
         notFound
     fi
-    echo "1 $DIR"
 done
 
 if [ -f "$DIR/.bin/grunt" ]; then

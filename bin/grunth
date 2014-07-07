@@ -35,7 +35,7 @@ done
 
 if [ -f "$DIR/.bin/grunt" ]; then
     GRUNT_PATH="$DIR/.bin/grunt"
-elif [ -f "$DIR/.bin/grunt" ]; then
+elif [ -f "$DIR/bin/grunt" ]; then
     GRUNT_PATH="$DIR/bin/grunt"
 else
     notFound

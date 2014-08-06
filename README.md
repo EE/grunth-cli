@@ -35,7 +35,7 @@ Note that, like before, apart from installing the `grunth-cli` global module, yo
 npm install grunt --save-dev
 ```
 
-## Installing grunt-cli locally
+## Installing grunth-cli locally
 If you prefer the idiomatic Node.js method to get started with a project (`npm install && npm test`) then install `grunth-cli` locally with `npm install grunth-cli --save-dev`. Then add a script to your `package.json` to run the associated grunt command: `"scripts": { "test": "grunth test" } `. Now `npm test` will use the locally installed `./node_modules/.bin/grunth` executable to run your Grunt commands.
 
 To read more about npm scripts, please visit the npm docs: [https://npmjs.org/doc/misc/npm-scripts.html](https://npmjs.org/doc/misc/npm-scripts.html).

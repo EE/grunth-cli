@@ -13,6 +13,8 @@ environment:
 install:
   # Get the Node version with matching major & minor numbers
   - ps: Install-Product node $env:nodejs_version
+  # Log HTTP requests
+  - npm config set loglevel http
   # Link the package to make the grunth binary available.
   - npm link
   # Typical npm stuff.

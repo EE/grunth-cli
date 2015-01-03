@@ -37,6 +37,6 @@
     "grunt-contrib-jshint": "0.10.0"
   },
   "scripts": {
-    "test": "grunth test"
+    "test": "./bin/grunth test"
   }
 }

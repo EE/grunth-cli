@@ -5,6 +5,5 @@ node_js:
 before_install:
   # Log HTTP requests
   - npm config set loglevel http
-  - npm link
 install:
   - time npm install

@@ -8,7 +8,7 @@
 
 ## Description
 This package exposes the `grunth` shell command that works like `grunt` but fires it using
-the node `--harmony_*` flags. Thanks to that, you can use ECMAScript 6 features that have experimental
+the node `--harmony_*` flags. Thanks to that you can use ECMAScript 6 features that have experimental
 implementation in Node, like `const`/`let` block scoping, generators etc.
 
 The module is a replacement for the `grunt-cli` package.
@@ -41,4 +41,4 @@ If you prefer the idiomatic Node.js method to get started with a project (`npm i
 To read more about npm scripts, please visit the npm docs: [https://npmjs.org/doc/misc/npm-scripts.html](https://npmjs.org/doc/misc/npm-scripts.html).
 
 ## License
-Copyright (c) 2014 Laboratorium EE. Licensed under the MIT license.
+Copyright (c) Laboratorium EE. Licensed under the MIT license.

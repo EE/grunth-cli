@@ -4,8 +4,7 @@
 
 ## Description
 This package exposes the `grunth` shell command that works like `grunt` but fires it using
-the node `--harmony_scoping` flag. Thanks to that, you can use ECMAScript 6 features that have experimental
-implementation in Node, like `const`/`let` block scoping, generators etc.
+the node `--harmony_scoping` flag. Thanks to that you can use `const`/`let` block scoping that so far has only an experimental implementation in Node.
 
 The module is a replacement for the `grunt-cli` package.
 

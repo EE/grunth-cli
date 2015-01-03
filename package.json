@@ -43,7 +43,7 @@
     "time-grunt": "0.3.2"
   },
   "scripts": {
-    "test": "./bin/grunth test"
+    "test": "node bin/grunth test"
   },
   "engines": {
     "node": ">=0.11.14"

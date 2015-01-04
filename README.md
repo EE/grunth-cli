@@ -3,7 +3,7 @@
 > Runs grunt with the --harmony_* flags
 
 [![Build Status](https://travis-ci.org/EE/grunth-cli.svg?branch=master)](https://travis-ci.org/EE/grunth-cli)
-[![Build status](https://ci.appveyor.com/api/projects/status/21v8mvntrl3uoqgo/branch/master)](https://ci.appveyor.com/project/mzgol/grunth-cli/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/21v8mvntrl3uoqgo/branch/master?svg=true)](https://ci.appveyor.com/project/mzgol/grunth-cli/branch/master)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 ## Description

@@ -32,7 +32,7 @@
   ],
   "dependencies": {
     "findup-sync": "0.2.1",
-    "grunt-cli": "~0.1.13"
+    "grunt-cli": "^0.1.13"
   },
   "devDependencies": {
     "grunt": "0.4.5",

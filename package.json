@@ -21,11 +21,7 @@
     "url": "https://github.com/EE/grunth-cli.git"
   },
   "bugs": "https://github.com/EE/grunth-cli/issues",
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ],
+  "license": "MIT",
   "files": [
     "bin",
     "lib"

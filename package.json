@@ -42,7 +42,7 @@
     "test": "node bin/grunth test"
   },
   "engines": {
-    "node": ">=0.11.14"
+    "node": ">=0.11.14 <1.0.0"
   },
   "engineStrict": true
 }

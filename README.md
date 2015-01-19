@@ -11,6 +11,9 @@ This package exposes the `grunth` shell command that works like `grunt` but fire
 the node `--harmony_*` flags. Thanks to that you can use ECMAScript 6 features that have experimental
 implementation in Node, like `const`/`let` block scoping, generators etc.
 
+NOTE: In most cases it might better to use [io.js](https://iojs.org) with regular grunt-cli instead. However,
+if you need to use Node.js 0.11.14, go ahead.
+
 The module is a replacement for the `grunt-cli` package.
 
 To install the module globally:
@@ -23,6 +26,8 @@ Note: current version requires Node >=0.11.14. If you need Node 0.10 support, us
 ```shell
 npm -g install grunth-cli@0.2.x
 ```
+
+grunth-cli doesn't work with io.js but it doesn't have to - it has many ES6 features built-in.
 
 Once the module has been installed, in every project that uses Grunt you can replace `grunt` with `grunth` in your commands, like:
 

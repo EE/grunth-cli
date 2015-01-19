@@ -7,9 +7,7 @@
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 ## Description
-This package exposes the `grunth` shell command that works like `grunt` but fires it using
-the node `--harmony_*` flags. Thanks to that you can use ECMAScript 6 features that have experimental
-implementation in Node, like `const`/`let` block scoping, generators etc.
+This package exposes the `grunth` shell command that works like `grunt` but fires it using the node `--harmony_*` flags. Thanks to that you can use ECMAScript 6 features that have experimental implementation in Node, like `const`/`let` block scoping, generators etc.
 
 NOTE: In most cases it might better to use [io.js](https://iojs.org) with regular grunt-cli instead. However,
 if you need to use Node.js 0.11.14, go ahead.

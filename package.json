@@ -1,6 +1,6 @@
 {
   "name": "grunth-cli",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0",
   "description": "Runs grunt with the --harmony_* flags",
   "homepage": "https://github.com/EE/grunth-cli",
   "author": {

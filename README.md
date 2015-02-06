@@ -2,9 +2,11 @@
 
 > Runs grunt with the --harmony_* flags
 
+<!--
 [![Build Status](https://travis-ci.org/EE/grunth-cli.svg?branch=master)](https://travis-ci.org/EE/grunth-cli)
 [![Build status](https://ci.appveyor.com/api/projects/status/21v8mvntrl3uoqgo/branch/master?svg=true)](https://ci.appveyor.com/project/mzgol/grunth-cli/branch/master)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+-->
 
 ## Description
 This package exposes the `grunth` shell command that works like `grunt` but fires it using the node `--harmony_*` flags. Thanks to that you can use ECMAScript 6 features that have experimental implementation in Node, like `const`/`let` block scoping, generators etc.

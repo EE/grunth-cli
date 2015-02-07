@@ -28,6 +28,7 @@
 
         // Node.js
         "no-mixed-requires": 0,
+        "no-process-exit": 0,
 
         // Stylistic issues
         "brace-style": 2,

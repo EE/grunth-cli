@@ -1,12 +1,3 @@
-/**
- * grunth-cli
- * https://github.com/EE/grunth-cli
- *
- * Author Michał Gołębiowski <m.goleb@gmail.com>
- * Copyright Laboratorium EE (http://laboratorium.ee/en)
- * Licensed under the MIT license.
- */
-
 'use strict';
 
 const assert = require('assert');

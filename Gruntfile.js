@@ -1,11 +1,7 @@
 'use strict';
 
-const assert = require('assert');
-
 module.exports = function (grunt) {
     require('time-grunt')(grunt);
-
-    let defaultName = 'default';
 
     grunt.initConfig({
         eslint: {
@@ -32,11 +28,17 @@ module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt);
 
     grunt.registerTask('asserts', function () {
-        assert(process.execArgv.indexOf('--harmony_scoping') !== -1,
-            'The harmony_scoping flag wasn\'t passed to the process');
         try {
             /* eslint-disable no-eval */
-            eval('function* f() {yield 2;} const g = f(); g.next();');
+            eval('function* f() {yield 2;} var g = f(); g.next();');
+            /* eslint-ensable no-eval */
+        } catch (e) {
+            throw new Error('Generators not recognized!');
+        }
+
+        try {
+            /* eslint-disable no-eval */
+            eval('function f() {"use strict"; const x = 2; return x;} f();');
             /* eslint-ensable no-eval */
         } catch (e) {
             throw new Error('Generators not recognized!');
@@ -53,5 +55,5 @@ module.exports = function (grunt) {
         'asserts',
     ]);
 
-    grunt.registerTask(defaultName, ['test']);
+    grunt.registerTask('default', ['test']);
 };

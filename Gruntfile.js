@@ -1,5 +1,7 @@
 'use strict';
 
+var semver = require('semver');
+
 module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
@@ -45,6 +47,13 @@ module.exports = function (grunt) {
             throw new Error('Block scoping (const/let) not recognized!');
         }
         grunt.log.writeln('Block scoping (const/let) recognized.');
+
+        if (semver.satisfies(process.version, '>=2.0.0')) {
+            if (process.execArgv.indexOf('--harmony') === -1) {
+                throw new Error('The --harmony flag was not passed!');
+            }
+            grunt.log.writeln('The --harmony flag was passed.');
+        }
     });
 
     grunt.registerTask('lint', [

@@ -35,14 +35,16 @@ module.exports = function (grunt) {
         } catch (e) {
             throw new Error('Generators not recognized!');
         }
+        grunt.log.writeln('Generators recognized.');
 
         try {
             /* eslint-disable no-eval */
-            eval('function f() {"use strict"; const x = 2; return x;} f();');
+            eval('function f() {"use strict"; const x = 2; let y = 3; return [x, y];} f();');
             /* eslint-ensable no-eval */
         } catch (e) {
-            throw new Error('Generators not recognized!');
+            throw new Error('Block scoping (const/let) not recognized!');
         }
+        grunt.log.writeln('Block scoping (const/let) recognized.');
     });
 
     grunt.registerTask('lint', [

@@ -48,7 +48,7 @@ module.exports = function (grunt) {
         }
         grunt.log.writeln('Block scoping (const/let) recognized.');
 
-        if (semver.satisfies(process.version, '>=2.0.0')) {
+        if (semver.satisfies(process.version, '>=1.0.0')) {
             if (process.execArgv.indexOf('--harmony') === -1) {
                 throw new Error('The --harmony flag was not passed!');
             }

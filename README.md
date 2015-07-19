@@ -15,7 +15,7 @@ NOTE:
 
 1. In most cases it might better to use [io.js](https://iojs.org) with regular grunt-cli instead. However,
 if you need to use Node.js 0.12, go ahead.
-2. In io.js this module uses `grunt` without passing any flags. As io.js includes latest stable V8 there's no point.
+2. In io.js this module uses `grunt --harmony` as the `--harmony` flag doesn't enable completely in-progress features as it was in V8 used in Node.js 0.12.
 
 The module is a replacement for the `grunt-cli` package.
 

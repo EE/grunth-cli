@@ -29,15 +29,15 @@
   "dependencies": {
     "findup-sync": "^0.2.1",
     "grunt-cli": "^0.1.13",
-    "semver": "^4.3.4"
+    "semver": "^5.0.1"
   },
   "devDependencies": {
     "grunt": "0.4.5",
-    "grunt-eslint": "13.0.0",
+    "grunt-eslint": "16.0.0",
     "grunt-jscs": "1.8.0",
-    "jscs-trailing-comma": "0.4.2",
-    "load-grunt-tasks": "3.1.0",
-    "time-grunt": "1.2.0"
+    "jscs-trailing-comma": "0.4.3",
+    "load-grunt-tasks": "3.2.0",
+    "time-grunt": "1.2.1"
   },
   "scripts": {
     "test": "node bin/grunth test"

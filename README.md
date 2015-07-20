@@ -14,7 +14,7 @@ This package exposes the `grunth` shell command that works like `grunt` but fire
 NOTE:
 
 1. In most cases it might better to use [io.js](https://iojs.org) with regular grunt-cli instead. However,
-if you need to use Node.js 0.12, go ahead.
+if you need to use Node.js 0.12 or want to experiment even in io.js, go ahead.
 2. In io.js this module uses `grunt --harmony` as the `--harmony` flag doesn't enable completely in-progress features as it was in V8 used in Node.js 0.12.
 
 The module is a replacement for the `grunt-cli` package.
@@ -29,8 +29,6 @@ Note: current version requires Node >=0.12.0. If you need Node 0.10 support, use
 ```shell
 npm -g install grunth-cli@0.2.x
 ```
-
-grunth-cli doesn't work with io.js but it doesn't have to - it has many ES6 features built-in.
 
 Once the module has been installed, in every project that uses Grunt you can replace `grunt` with `grunth` in your commands, like:
 

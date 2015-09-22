@@ -15,15 +15,6 @@ module.exports = function (grunt) {
                 ],
             },
         },
-
-        jscs: {
-            all: {
-                src: '<%= eslint.all.src %>',
-                options: {
-                    config: '.jscsrc',
-                },
-            },
-        },
     });
 
     // Load all grunt tasks matching the `grunt-*` pattern.
@@ -58,7 +49,6 @@ module.exports = function (grunt) {
 
     grunt.registerTask('lint', [
         'eslint',
-        'jscs',
     ]);
 
     grunt.registerTask('test', [

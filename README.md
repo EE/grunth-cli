@@ -47,7 +47,7 @@ If you prefer the idiomatic Node.js method to get started with a project (`npm i
 To read more about npm scripts, please visit the npm docs: [https://npmjs.org/doc/misc/npm-scripts.html](https://npmjs.org/doc/misc/npm-scripts.html).
 
 ## Supported Node.js versions
-This project aims to support all Node.js LTS versions in the "active" phase (see [LTS README](https://github.com/nodejs/LTS/blob/master/README.md) for more details) as well as the latest stable Node.js. Today that means Node.js 0.12, 4 & 5.
+This project aims to support all Node.js versions supported by upstream (see [LTS README](https://github.com/nodejs/LTS/blob/master/README.md) for more details) with the exception of Node 0.10. Today that means Node.js 0.12, 4, 5 & 6.
 
 ## License
 Copyright (c) Laboratorium EE. Licensed under the MIT license.

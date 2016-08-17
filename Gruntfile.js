@@ -14,7 +14,6 @@ module.exports = function (grunt) {
         return oldNode ? 'print_old_node_message:' + task : task;
     };
 
-
     grunt.initConfig({
         eslint: {
             all: {

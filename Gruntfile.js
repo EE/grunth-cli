@@ -8,8 +8,8 @@ module.exports = function (grunt) {
     var oldNode = /^v0\./.test(process.version);
 
     // Support: Node.js <4
-    // Skip running tasks that dropped support for Node.js 0.10 & 0.12
-    // in those Node versions.
+    // Skip running tasks that dropped support for Node.js 0.12
+    // in thise Node version.
     var runIfNewNode = function (task) {
         return oldNode ? 'print_old_node_message:' + task : task;
     };

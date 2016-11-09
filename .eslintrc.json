@@ -3,9 +3,13 @@
 
     "extends": "mgol",
 
+    "parserOptions": {
+        "ecmaVersion": 5
+    },
+
     "env": {
-        "node": true,
-        "es6": false
+        "es6": false,
+        "node": true
     },
 
     "rules": {

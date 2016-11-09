@@ -13,8 +13,7 @@ This package exposes the `grunth` shell command that works like `grunt` but fire
 
 NOTE:
 
-1. In most cases it might better to use Node.js 4 or newer with regular grunt-cli instead. However,
-if you need to use Node.js 0.12 or want to experiment even in newer Node, go ahead.
+1. In most cases it might better to use Node.js 4 or newer with regular grunt-cli instead. However, if you need to use Node.js 0.12 or want to experiment even in newer Node, go ahead.
 2. In Node.js 4 or newer this module uses `grunt --harmony` as the `--harmony` flag doesn't enable completely in-progress features as it was in V8 used in Node.js 0.12.
 
 The module is a replacement for the `grunt-cli` package.

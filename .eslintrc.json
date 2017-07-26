@@ -15,6 +15,15 @@
     "rules": {
         // Rules are divided into sections from http://eslint.org/docs/rules/
 
+        // Best practices
+        "comma-dangle": ["error", {
+            "arrays": "always-multiline",
+            "objects": "always-multiline",
+            "imports": "always-multiline",
+            "exports": "always-multiline"
+        }],
+
+
         // ECMAScript 6
         "no-var": "off",
         "object-shorthand": "off",

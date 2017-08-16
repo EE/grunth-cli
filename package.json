@@ -27,12 +27,12 @@
     "lib"
   ],
   "dependencies": {
-    "findup-sync": "^1.0.0",
+    "findup-sync": "^2.0.0",
     "grunt-cli": "^1.2.0",
     "semver": "^5.4.1"
   },
   "devDependencies": {
-    "eslint-config-mgol": "0.0.39",
+    "eslint-config-mgol": "0.0.40",
     "grunt": "1.0.1",
     "grunt-eslint": "20.0.0",
     "load-grunt-tasks": "3.5.2",

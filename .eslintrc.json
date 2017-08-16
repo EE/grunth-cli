@@ -15,14 +15,14 @@
     "rules": {
         // Rules are divided into sections from http://eslint.org/docs/rules/
 
-        // Best practices
+        // Stylistic issues
+        // Disable comma-dangle for functions as it's not supported in ES5 or ES2015.
         "comma-dangle": ["error", {
             "arrays": "always-multiline",
             "objects": "always-multiline",
             "imports": "always-multiline",
             "exports": "always-multiline"
         }],
-
 
         // ECMAScript 6
         "no-var": "off",

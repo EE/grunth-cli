@@ -5,7 +5,7 @@ var semver = require('semver');
 module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
-    var oldNode = /^v0\./.test(process.version);
+    var oldNode = /^v[045]\./.test(process.version);
 
     // Support: Node.js <4
     // Skip running tasks that dropped support for Node.js 0.12

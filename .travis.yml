@@ -1,5 +1,4 @@
 language: node_js
-sudo: false
 node_js:
   - '0.12'
   - '4'
@@ -7,17 +6,10 @@ node_js:
   - '6'
   - '7'
   - '8'
-env:
-  global:
-    - CXX=g++-4.8
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - g++-4.8
-before_install:
-  # Log HTTP requests
-  - npm config set loglevel http
+  - '9'
+  - '10'
+  - '11'
+  - '12'
+  - '13'
 install:
   - time npm install
